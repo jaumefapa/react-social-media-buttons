@@ -1,0 +1,155 @@
+.header {
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 0px 8px 2px #2222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.header p {
+  font-size: 2rem;
+  font-family: monospace;
+  text-align: center;
+}
+
+.gradient-samples-display {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.app-samples-container {
+  background-color: white;
+  height: 200px;
+  width: 60%;
+  margin: 10px auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 2px #2222;
+  z-index: 2;
+}
+
+/* INTRO */
+
+.intro h2 {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.intro p {
+  font-family: monospace;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #484848;
+}
+
+.intro p strong {
+  color: #303030;
+  font-weight: 600;
+}
+/* FORM */
+
+.app-body-container {
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+/* OUTPUT CODE SECTION */
+
+.output-code-section {
+  background-color: #e6e6e6;
+  padding: 50px 0px;
+}
+
+.output-code-main {
+  width: 40%;
+  margin: 0px auto;
+}
+
+.output-code-section h1 {
+  font-size: 2rem;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.output-code-box {
+  background-color: 'transparent';
+  font-size: 1rem;
+  font-family: monospace;
+  overflow: auto;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  padding: 20px 0px;
+  color: #606060;
+}
+
+.post-scriptum {
+  font-size: 0.6rem;
+}
+
+/* THIS BLOCK MUST BE REMOVED AFTER USE */
+
+.TESTING-AREA {
+  background-color: #f8d798;
+  padding: 50px 0px;
+}
+
+.TESTING-AREA .SocialButtonsContainer {
+  border: 1px solid blue;
+  /* width: fit-content; Applied by default in the component */
+  /* FIT-CONTENT NEEDS TO BE REVIEWED */
+}
+
+/* END BLOCK TO BE REMOVED */
+
+/* RESPONSIVENESS SMALLER SCREENS */
+
+@media only screen and (max-width: 1200px) {
+  .app-samples-container {
+    height: 150px;
+    width: 80%;
+  }
+
+  .app-body-container {
+    width: 80%;
+    /* margin-bottom: 70px; */
+  }
+
+  /* OUTPUT CODE SECTION */
+
+  .output-code-main {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header p {
+    font-size: 1.5rem;
+  }
+}

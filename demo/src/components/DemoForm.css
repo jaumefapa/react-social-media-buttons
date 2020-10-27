@@ -1,0 +1,411 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* RESETING CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS STARTS HERE */
+
+.material-icons {
+  cursor: pointer;
+}
+
+.form-container {
+  font-family: Helvetica, sans-serif;
+}
+
+.form-div {
+  margin-bottom: 70px;
+}
+
+.form-container h2 {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.div-vertical-label-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-vertical-label-input * {
+  margin: 0.8rem 0rem;
+}
+
+.div-vertical-label-input .output-value {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+/* FORM: LINKS SECTION */
+
+.drag-drop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.drag-drop-item {
+  margin: 5px;
+  display: flex;
+  justify-content: baseline;
+  padding: 5px;
+  border: 1px solid #f2f2f2;
+  width: auto;
+}
+
+.drag-drop-item input {
+  background-color: #f2f2f2;
+  border-style: none;
+  padding: 5px;
+  width: 250px;
+}
+
+.arrow-icons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.4rem;
+}
+
+.arrow-icons span {
+  font-size: 1rem;
+  color: #666666;
+}
+
+.trash-icon {
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+  color: #666666;
+  position: relative;
+  top: 6px;
+}
+
+/* RADIO BUTTONS: PRESET FORMAT + BORDER STYLE */
+
+.radio-toolbar {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.radio-toolbar input[type='radio'] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 1px solid #666666;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px 2px #2222;
+  margin: 10px;
+}
+
+.radio-toolbar label:hover {
+  background-color: lightgray;
+}
+
+.radio-toolbar input[type='radio']:focus + label {
+  border: 1px solid black;
+}
+
+.radio-toolbar input[type='radio']:checked + label {
+  background-color: #666666;
+  color: white;
+  /* border-color: #4c4; */
+}
+
+/* FORM: LAYOUT SECTION */
+
+.radio-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.radio-buttons input {
+  margin-right: 10px;
+}
+
+.number-counter {
+  width: 50px;
+  /* margin-left: 10px; */
+}
+
+/* FORM: COLOR */
+
+.div-horizontal-flex-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.div-horizontal-flex-wrap * {
+  margin: 0.6rem;
+}
+
+.background-icon {
+  font-size: 1.2rem;
+  color: #666666;
+  position: relative;
+  top: 3px;
+  border: none;
+  background-color: transparent;
+}
+
+.input-color {
+  /* border: 0px none; */
+  box-shadow: 0px 0px 8px 2px #2222;
+}
+
+/* FORM: BORDER-SECTION */
+
+.border-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* INPUT RANGE: SPACE BETWEEN ICONS + SIZE + BORDER RADIUS */
+
+input[type='range'].range-slider {
+  /* width: 100%; */
+  width: 300px;
+  margin: 6.5px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+input[type='range'].range-slider:focus {
+  outline: none;
+}
+input[type='range'].range-slider::-webkit-slider-runnable-track {
+  background: #d2d2d2;
+  border: 1px solid #000101;
+  border-radius: 25px;
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+}
+input[type='range'].range-slider::-webkit-slider-thumb {
+  margin-top: -7.5px;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border: 2px solid #323232;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type='range'].range-slider:focus::-webkit-slider-runnable-track {
+  background: #dfdfdf;
+}
+input[type='range'].range-slider::-moz-range-track {
+  background: #d2d2d2;
+  border: 1px solid #000101;
+  border-radius: 25px;
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+}
+input[type='range'].range-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border: 2px solid #323232;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input[type='range'].range-slider::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 6.5px 0;
+  color: transparent;
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+}
+input[type='range'].range-slider::-ms-fill-lower {
+  background: #c5c5c5;
+  border: 1px solid #000101;
+  border-radius: 50px;
+}
+input[type='range'].range-slider::-ms-fill-upper {
+  background: #d2d2d2;
+  border: 1px solid #000101;
+  border-radius: 50px;
+}
+input[type='range'].range-slider::-ms-thumb {
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border: 2px solid #323232;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+input[type='range'].range-slider:focus::-ms-fill-lower {
+  background: #d2d2d2;
+}
+input[type='range'].range-slider:focus::-ms-fill-upper {
+  background: #dfdfdf;
+}
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align: auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  input[type='range'].range-slider {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
+
+/* RESPONSIVENESS SMALLER SCREENS */
+
+@media only screen and (max-width: 350px) {
+  .drag-drop-item input {
+    width: 150px;
+  }
+
+  input[type='range'].range-slider {
+    width: 200px;
+  }
+}
