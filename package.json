@@ -1,6 +1,6 @@
 {
   "name": "react-social-media-buttons",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "React component to insert Social Media buttons easily",
   "main": "./build/index.js",
   "scripts": {
@@ -23,8 +23,11 @@
   },
   "homepage": "https://github.com/JohnSoane/react-social-media-buttons#readme",
   "peerDependencies": {
-    "react": "16.8.6"
+    "react": "16.13.1"
   },
+  "files": [
+    "build/"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
@@ -45,5 +48,6 @@
     "prettier": "^1.18.2",
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.4"
-  }
+  },
+  "dependencies": {}
 }

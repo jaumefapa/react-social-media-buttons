@@ -80,13 +80,13 @@ function DemoForm({
       {/* >>> PRESET FORMATS <<< */}
       <div className="form-div">
         <h2>Preset formats</h2>
-        <div className="inputs-div">
+        {/* <div className="inputs-div">
           <RadioButtonsComponent
             inputs={availablePresetFormats}
             onClick={setPresetFormat}
             className="radio-toolbar"
           />
-        </div>
+        </div> */}
         <div className="inputs-div">
           <div className="radio-toolbar">
             <input
@@ -302,15 +302,15 @@ function DemoForm({
         </div>
       </div>
       {/* >>> HOVER <<< */}
-      <div className="form-div">
+      {/* <div className="form-div">
         <h2>Hover</h2>
         <div className="inputs-div border-section">
-          {/* HOVER-COLORS */}
+          HOVER-COLORS
           <div className="hover-colors"></div>
-          {/* HOVER-TRANSFORM */}
+          HOVER-TRANSFORM
           <div className="hover-transform"></div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

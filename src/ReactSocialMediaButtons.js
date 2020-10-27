@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import iconsDb from './iconsDb';
+import PropTypes from 'prop-types';
 
 function SocialButtonsContainer({ links, buttonStyle, iconStyle, openNewTab }) {
   const buttonDefaultStyle = {
@@ -7,11 +8,6 @@ function SocialButtonsContainer({ links, buttonStyle, iconStyle, openNewTab }) {
     position: 'relative',
     width: '50px',
     height: '50px',
-  };
-
-  const hoverStyleObject = {
-    backgroundColor: 'yellow',
-    color: 'red',
   };
 
   const defaultStyleContainer = {
@@ -30,31 +26,13 @@ function SocialButtonsContainer({ links, buttonStyle, iconStyle, openNewTab }) {
     setButtonStyleState(finalButtonStyle);
   }, [links, buttonStyle, iconStyle]);
 
-  // useEffect(() => {
-  //   let tempState = Object.assign(buttonDefaultStyle, buttonStyle);
-  //   setOriginalButtonStyle(tempState);
-  // },[links,buttonStyle, iconStyle])
-
   return (
     <div className="SocialButtonsContainer" style={defaultStyleContainer}>
       {links.map(link => {
         let extractedDomain = returnDomainUrl(link);
         if (iconsDb[extractedDomain]) {
           return (
-            <a
-              href={link}
-              target={openNewTab}
-              style={buttonStyleState}
-              onMouseOver={() => {
-                setButtonStyleState(state => ({
-                  ...state,
-                  ...hoverStyleObject,
-                }));
-              }}
-              onMouseOut={() => {
-                setOriginalButtonStyle(state => ({ ...state }));
-              }}
-            >
+            <a href={link} target={openNewTab} style={buttonStyleState}>
               <svg viewBox="0 0 64 64" style={iconStyle}>
                 <g fill={iconStyle.color}>
                   <path d={iconsDb[extractedDomain].icon}></path>

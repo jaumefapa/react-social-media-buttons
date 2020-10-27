@@ -1,1 +1,99 @@
-# react-social-media-buttons
+# React Social Media Buttons - RSMB
+
+RSMB is a complete ready to use react component for displaying the most common Social Media icons and format them as you wish.
+
+## Getting started
+
+```bash
+npm install react-social-media-buttons
+```
+
+### How to use
+
+Check out the **[live demo here](https://demoreactsocialmediabuttons.netlify.com/)** to get an idea on how it works!
+
+Import the component `SocialMediaButtons` from the library and pass the props of your social links and CSS.
+
+```jsx
+import SocialMediaButtons from 'react-social-media-buttons';
+
+const MyComponent = () => {
+  const links = ['https://github.com/jaumefapa', 'https://www.linkedin.com/in/jaume-fabrega/'];
+
+  const buttonStyle = {
+    backgroundColor: '#000000',
+    borderRadius: '50%',
+  };
+
+  const iconStyle = { color: '#ffffff' };
+
+  return (
+    <div>
+      <SocialMediaButtons buttonStyle={buttonStyle} iconStyle={iconStyle} />
+    </div>
+  );
+};
+```
+
+## Props
+
+| Prop name         |  Type   |       Default       | Required | Description |
+| ----------------- | :-----: | :-----------------: | :------: | :---------: |
+| `width`           | String! |       `50px`        |  false   |             |
+| `height`          | String! |       `50px`        |  false   |             |
+| `margin`          | String! |        `5px`        |  false   |             |
+| `backgroundColor` | String! |      `#ffffff`      |  false   |             |
+| `borderRadius`    | String! |        `50%`        |  false   |             |
+| `border`          | String! | `2px solid #000000` |  false   |             |
+| `borderColor`     | String! |          -          |  false   |             |
+| `borderThickness` | String! |          -          |  false   |             |
+| `borderStyle`     | String! |          -          |  false   |             |
+
+### iconStyle
+
+| Prop name |  Type   |  Default  | Required |    Description    |
+| --------- | :-----: | :-------: | :------: | :---------------: |
+| `color`   | String! | `#000000` |   true   | Color of the icon |
+
+### openNewTab
+
+| Prop name    |   Type   | Default | Required |             Description             |
+| ------------ | :------: | :-----: | :------: | :---------------------------------: |
+| `openNewTab` | Boolean! |  true   |  false   | Indicate if open links in a new tab |
+
+## Other examples
+
+#### Custom Options
+
+It's possible to pass options and style objects to customize the way you prefer.
+
+```jsx
+<SocialMediaButtons
+  links={
+    [
+      /* array of links */
+    ]
+  }
+  buttonStyle={{
+    width: '80px',
+    height: '80px',
+    border: '2px solid #000000',
+    backgroundColor: '#919191',
+  }}
+  iconStyle={{
+    color: '#ffffff',
+  }}
+/>
+```
+
+## Contributing
+
+To contribue please read the [CONTRIBUTING.md](https://github.com/jaumefapa/react-social-media-buttons/CONTRIBUTING.md)
+
+## Contributors
+
+- Jaume Fàbrega - [GitHub](https://github.com/jaumefapa) - [LinkedIn](https://www.linkedin.com/in/jaume-fabrega/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/jaumefapa/react-social-media-buttons/LICENSE) file for details.
