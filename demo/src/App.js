@@ -34,7 +34,6 @@ function App() {
   });
 
   const [links, setLinks] = useState(defaults.links);
-  const [currentFormat, setCurrentFormat] = useState('Custom');
   const presetFormat = useFormInput(defaults.presetFormat);
   const iconsLayout = useFormInput(defaults.iconsLayout, presetFormat.setValue);
   const logoSize = useFormInput(defaults.logoSize, presetFormat.setValue);

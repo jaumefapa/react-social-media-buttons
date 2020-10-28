@@ -2,7 +2,7 @@ import React from 'react';
 import './RadioButtonsComponent.css';
 import PropTypes from 'prop-types';
 
-function RadioButtonsComponent({ inputs, inputsNames, className, onClick }) {
+function RadioButtonsComponent({ inputs, inputsNames, className, onClick, checked }) {
   return (
     <div className="radio-toolbar">
       {inputs.map((input, index) => {
@@ -14,7 +14,7 @@ function RadioButtonsComponent({ inputs, inputsNames, className, onClick }) {
               name={`radio-${input}`}
               value={input}
               onClick={onClick}
-              // checked={value === this.value}
+              defaultChecked={checked === input && true}
             />
             <label htmlFor={`${input}-preset`}>
               {inputsNames ? inputsNames[index] : input.charAt(0).toUpperCase() + input.slice(1)}
