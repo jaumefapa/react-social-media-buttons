@@ -47,7 +47,7 @@ function App() {
   const borderColor = useFormInput(defaults.borderColor, presetFormat.setValue);
   const openNewTab = useFormInput(defaults.openNewTab);
 
-  // Refactor with useFromInput. Should be feasible
+  // Refactor with useFromInput. Should be feasible.
   function updateLinksArray(event, index) {
     const newArr = [...links];
     newArr[index] = event.target.value;
