@@ -14,7 +14,9 @@ function InputColorComponent({ value, onChange, showTransparency, inputName }) {
           </button>
         )}
       </div>
-      <p className="output-value">{value.charAt(0).toUpperCase() + value.slice(1)}</p>
+      <p className="output-value">
+        {typeof value === 'string' && value.charAt(0).toUpperCase() + value.slice(1)}
+      </p>
     </div>
   );
 }
