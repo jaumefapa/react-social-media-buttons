@@ -17,6 +17,7 @@ function RadioButtonsComponent({ inputs, inputsNames, className, onClick, checke
               defaultChecked={checked === input && true}
             />
             <label htmlFor={`${input}-preset`}>
+              {inputsNames ? inputsNames[index] : input}
               {inputsNames ? inputsNames[index] : input.charAt(0).toUpperCase() + input.slice(1)}
             </label>
           </div>
