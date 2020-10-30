@@ -38,7 +38,7 @@ function DemoForm({
 
   return (
     <div className="form-container">
-      {/* >>> LINK <<< */}
+      {/* >>> LINK FOR YOUR BUTTONS <<< */}
       <div className="form-div">
         <h2>Links</h2>
         <div className="inputs-div drag-drop-container">
@@ -182,16 +182,6 @@ function DemoForm({
           />
         </div>
       </div>
-      {/* >>> HOVER <<< */}
-      {/* <div className="form-div">
-        <h2>Hover</h2>
-        <div className="inputs-div border-section">
-          HOVER-COLORS
-          <div className="hover-colors"></div>
-          HOVER-TRANSFORM
-          <div className="hover-transform"></div>
-        </div>
-      </div> */}
     </div>
   );
 }

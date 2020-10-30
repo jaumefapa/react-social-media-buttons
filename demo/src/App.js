@@ -239,6 +239,4 @@ function App() {
   }
 }
 
-// Create prop, setValue and handleChange. it basically makes me avoid exporting and importing prop, setValue and handleChange for every CSS property.
-
 export default App;
