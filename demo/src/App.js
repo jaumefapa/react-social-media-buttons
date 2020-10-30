@@ -207,7 +207,7 @@ function App() {
         <div>Made by Jaume Fàbrega</div>
         <SocialButtonsContainer
           key={'buttons-container-2'}
-          links={['https://www.linkedin.com/in/jaume-fabrega/', 'github']}
+          links={['https://www.linkedin.com/in/jaume-fabrega/', 'https://github.com/jaumefapa']}
           buttonStyle={{
             width: '35px',
             height: '35px',
@@ -215,7 +215,7 @@ function App() {
             borderRadius: '35%',
           }}
           iconStyle={{ color: '#606060' }}
-          openNewTab={false}
+          openNewTab={true}
         />
         <p className="post-scriptum">
           (In case you're wondering, YES! Above I'm using my component)
