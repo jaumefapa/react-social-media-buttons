@@ -11,7 +11,7 @@ function RadioButtonsComponent({ inputs, inputsNames, className, onClick, checke
             <input
               type="radio"
               id={`${input}-preset`}
-              name={`radio-${input}`}
+              name={`radio-${inputs}`}
               value={input}
               onClick={onClick}
               defaultChecked={checked === input && true}

@@ -65,7 +65,7 @@ function DemoForm({
           inputs={availableArefTargetsInputs}
           inputsNames={availableArefTargetsNames}
           onClick={openNewTab.onChange}
-          checked={true}
+          checked={availableArefTargetsInputs[0]}
           className="radio-new-tab-div"
         />
       </div>
@@ -91,7 +91,6 @@ function DemoForm({
           onChange={iconSpace.onChange}
           rangeName={'Space between buttons:'}
           measureUnit={'px'}
-          // className="div-vertical-label-input"
         />
       </div>
       {/* >>> SIZE <<< */}
@@ -156,61 +155,10 @@ function DemoForm({
             <RadioButtonsComponent
               inputs={availableBorderStyles}
               onClick={borderStyle.onChange}
+              checked={'none'}
               className="radio-toolbar"
               name="radio-border-style"
             />
-          </div>
-          <div className="radio-toolbar">
-            <input
-              type="radio"
-              id="none"
-              name="radio-border-style"
-              value="none"
-              onChange={borderStyle.onChange}
-              checked={borderStyle.value === 'none'}
-            />
-            <label htmlFor="none">None</label>
-            <input
-              type="radio"
-              id="solid"
-              name="radio-border-style"
-              value="solid"
-              onChange={borderStyle.onChange}
-              checked={borderStyle.value === 'solid'}
-            />
-            <label htmlFor="solid">Solid</label>
-            <input
-              type="radio"
-              id="dashed"
-              name="radio-border-style"
-              value="dashed"
-              onChange={borderStyle.onChange}
-            />
-            <label htmlFor="dashed">Dashed</label>
-            <input
-              type="radio"
-              id="dotted"
-              name="radio-border-style"
-              value="dotted"
-              onChange={borderStyle.onChange}
-            />
-            <label htmlFor="dotted">Dotted</label>
-            <input
-              type="radio"
-              id="groove"
-              name="radio-border-style"
-              value="groove"
-              onChange={borderStyle.onChange}
-            />
-            <label htmlFor="groove">Groove</label>
-            <input
-              type="radio"
-              id="ridge"
-              name="radio-border-style"
-              value="ridge"
-              onChange={borderStyle.onChange}
-            />
-            <label htmlFor="ridge">Ridge</label>
           </div>
           {/* BORDER-THICKNESS */}
           <div className="form-label div-vertical-label-input">
