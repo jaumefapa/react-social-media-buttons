@@ -96,7 +96,7 @@ To contribue please read the [CONTRIBUTING.md](https://github.com/jaumefapa/reac
 
 ## Acknowledgments
 
-- To Leonardo di Vitorio for the idea and the demo ["inspiration"](https://gallereact.netlify.app/) - [GitHub](https://github.com/Leon31)
+- To Leonardo Di Vittorio for the idea and the demo ["inspiration"](https://gallereact.netlify.app/) - [GitHub](https://github.com/Leon31)
 - To Jake Trent from whom I fork the original repo with all the svg icons - [GitHub](https://github.com/jaketrent/react-social-icons)
 - To my colleagues who contributed with ideas, feedback and some refactorization suggestions.
 
