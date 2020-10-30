@@ -8,10 +8,10 @@ import presetFormats from './presetFormats';
 
 const defaults = {
   links: [
-    'https://www.facebook.com/Codeworks/',
-    'https://twitter.com/codeworks',
-    'https://www.instagram.com/codeworks/',
-    'https://www.linkedin.com/school/codeworks/',
+    'https://www.facebook.com/facebook',
+    'https://twitter.com/Twitter',
+    'https://www.instagram.com/instagram/',
+    'https://www.linkedin.com/company/linkedin/',
     '',
   ],
   presetFormat: 'custom',
@@ -19,10 +19,10 @@ const defaults = {
   logoSize: 50,
   buttonSize: 50,
   iconSpace: 10,
-  color: '#FF7B10',
-  backgroundColor: '#E6E6E6',
+  color: '#134d8b',
+  backgroundColor: '#cce7ff',
   borderStyle: 'none',
-  borderRadius: 35,
+  borderRadius: 30,
   borderThickness: 2,
   borderColor: '#000000',
   openNewTab: true,
@@ -162,6 +162,12 @@ function App() {
         <p>
           For the technical setup you should check the{' '}
           <a href="https://www.npmjs.com/package/react-social-media-buttons">npm package</a>.
+        </p>
+        <br></br>
+        <p>
+          Paste your Social Media links in the small grey rectangles and the buttons will render
+          automatically. It's important you paste the all link because is the one that is gonna be
+          assigned as 'href' to the button.
         </p>
         <br></br>
         <p>

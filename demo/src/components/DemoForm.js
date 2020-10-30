@@ -38,9 +38,9 @@ function DemoForm({
 
   return (
     <div className="form-container">
-      {/* >>> LINK FOR YOUR BUTTONS <<< */}
+      {/* >>> LINKS FOR YOUR BUTTONS <<< */}
       <div className="form-div">
-        <h2>Links</h2>
+        <h2>Links for your buttons</h2>
         <div className="inputs-div drag-drop-container">
           {links.map((link, index) => {
             return (
