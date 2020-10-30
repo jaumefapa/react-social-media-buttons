@@ -1,6 +1,6 @@
 {
   "name": "react-social-media-buttons",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React component to insert Social Media buttons easily",
   "main": "./build/index.js",
   "scripts": {
