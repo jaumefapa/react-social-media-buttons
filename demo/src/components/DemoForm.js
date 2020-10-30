@@ -15,7 +15,7 @@ function DemoForm({
   moveIconDown,
   setPresetFormat,
 }) {
-  const [
+  const {
     links,
     iconSpace,
     buttonSize,
@@ -26,7 +26,7 @@ function DemoForm({
     borderThickness,
     borderColor,
     openNewTab,
-  ] = props;
+  } = props;
 
   const availablePresetFormats = Object.keys(presetFormatsDb);
   availablePresetFormats.push('custom');

@@ -177,11 +177,9 @@ function App() {
           moveIconUp={moveIconUp}
           moveIconDown={moveIconDown}
           setPresetFormat={setPresetFormat}
-          props={[
+          props={{
             links,
-            iconsLayout,
             iconSpace,
-            logoSize,
             buttonSize,
             color,
             backgroundColor,
@@ -191,7 +189,7 @@ function App() {
             borderColor,
             presetFormat,
             openNewTab,
-          ]}
+          }}
         />
       </div>
       {/* >>> OUTPUT CODE <<< */}
