@@ -10,7 +10,7 @@ npm install react-social-media-buttons
 
 ### How to use
 
-Check out the **[live demo here](https://demoreactsocialmediabuttons.netlify.com/)** to get an idea on how it works!
+Check out the **[live demo here](https://react-social-media-buttons.vercel.app/)** to get an idea on how it works!
 
 Import the component `SocialMediaButtons` from the library and pass the props of your social links and CSS.
 
