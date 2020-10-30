@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import iconsDb from './iconsDb';
-import PropTypes from 'prop-types';
+import './SocialButtonsContainer.css';
+import iconsDb from '../iconsDb';
+import SocialButton from './SocialButton';
 
-function SocialButtonsContainer({ links, buttonStyle, iconStyle, openNewTab }) {
+function SocialButtonsContainer({ links, buttonStyle, iconStyle, openNewTab, theme }) {
+  const defaultStyleContainer = {
+    width: 'fit-content',
+  };
+
   const buttonDefaultStyle = {
     display: 'inline-block',
     position: 'relative',
@@ -10,49 +15,36 @@ function SocialButtonsContainer({ links, buttonStyle, iconStyle, openNewTab }) {
     height: '50px',
   };
 
-  const defaultStyleContainer = {
-    width: 'fit-content',
-  };
-
   if (openNewTab) openNewTab = '_blank';
 
-  const finalButtonStyle = Object.assign(buttonDefaultStyle, buttonStyle);
-
-  const [buttonStyleState, setButtonStyleState] = useState(finalButtonStyle);
-
-  const [OriginalButtonStyleState, setOriginalButtonStyle] = useState(buttonDefaultStyle);
-
-  useEffect(() => {
-    setButtonStyleState(finalButtonStyle);
-  }, [links, buttonStyle, iconStyle]);
-
   return (
-    <div className="SocialButtonsContainer" style={defaultStyleContainer}>
+    <div className={defaultStyleContainer}>
       {links.map(link => {
-        let extractedDomain = returnDomainUrl(link);
-        if (iconsDb[extractedDomain]) {
+        const extractedDomain = returnDomainUrl(link);
+        if (extractedDomain) {
           return (
-            <a href={link} target={openNewTab} style={buttonStyleState}>
-              <svg viewBox="0 0 64 64" style={iconStyle}>
-                <g fill={iconStyle.color}>
-                  <path d={iconsDb[extractedDomain].icon}></path>
-                </g>
-              </svg>
-            </a>
+            <SocialButton
+              link={link}
+              extractedDomain={extractedDomain}
+              buttonStyle={buttonStyle}
+              iconStyle={iconStyle}
+              openNewTab={openNewTab}
+            />
           );
         }
       })}
     </div>
   );
 }
+const domains = Object.keys(iconsDb);
 
 function returnDomainUrl(url) {
-  const domains = Object.keys(iconsDb);
+  if (url) {
+    const finalRegex = new RegExp(/^(?:https?:\/\/)?(?:www\.)?([a-zA-Z0-9]*)/);
+    let extractedDomain = url.match(finalRegex)[1];
 
-  const finalRegex = new RegExp(/^(?:https?:\/\/)?(?:www\.)?([a-zA-Z0-9]*)/);
-  let extractedDomain = url.match(finalRegex)[1];
-
-  return domains.includes(extractedDomain) ? extractedDomain : null;
+    return domains.includes(extractedDomain) ? extractedDomain : false;
+  }
 }
 
 SocialButtonsContainer.propTypes = {

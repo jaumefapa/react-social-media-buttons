@@ -1,1 +1,1 @@
-export { default } from "./ReactSocialMediaButtons";
+export { default } from './ReactSocialMediaButtons';
