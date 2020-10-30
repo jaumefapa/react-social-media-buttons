@@ -161,7 +161,7 @@ function App() {
         <br></br>
         <p>
           For the technical setup you should check the{' '}
-          <a href="https://www.npmjs.com/">npm package</a>.
+          <a href="https://www.npmjs.com/package/react-social-media-buttons">npm package</a>.
         </p>
         <br></br>
         <p>
