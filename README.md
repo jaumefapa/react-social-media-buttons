@@ -8,6 +8,49 @@ RSMB is a complete ready to use react component for displaying the most common S
 npm install react-social-media-buttons
 ```
 
+## Available icons
+
+- email/mailto
+- bBandsintown
+- behance
+- codepen
+- dribbble
+- dropbox
+- facebook
+- fivehundredpix
+- flickr
+- foursquare
+- github
+- google Play
+- google
+- instagram
+- itunes
+- linkedin
+- medium
+- meetup
+- pinterest
+- rdio
+- reddit
+- rss
+- sharethis
+- smugmug
+- snapchat
+- soundcloud
+- spotify
+- squarespace
+- tumblr
+- twitch
+- twitter
+- vevo
+- vimeo
+- vine
+- vk
+- vsco
+- wechat
+- whatsapp
+- yelp
+- youtube
+
 ### How to use
 
 Check out the **[live demo here](https://react-social-media-buttons.vercel.app/)** to get an idea on how it works!
