@@ -1,6 +1,6 @@
 {
   "name": "react-social-media-buttons",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React component to insert Social Media buttons easily",
   "main": "./build/index.js",
   "scripts": {
@@ -14,14 +14,16 @@
   },
   "keywords": [
     "social-media-buttons",
-    "social-media-icons"
+    "social-media-icons",
+    "react-social-media",
+    "react-social-media-buttons"
   ],
   "author": "Jaume Fabrega",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JohnSoane/react-social-media-buttons/issues"
   },
-  "homepage": "https://github.com/JohnSoane/react-social-media-buttons#readme",
+  "homepage": "https://react-social-media-buttons.vercel.app/",
   "peerDependencies": {
     "react": "16.8.1"
   },
