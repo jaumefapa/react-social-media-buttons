@@ -28,11 +28,11 @@ function SocialButtonsContainer({ links, buttonStyle, iconStyle, openNewTab }) {
 
   return (
     <div className="SocialButtonsContainer" style={defaultStyleContainer}>
-      {links.map(link => {
+      {links.map((link, index) => {
         let extractedDomain = returnDomainUrl(link);
         if (iconsDb[extractedDomain]) {
           return (
-            <a href={link} target={openNewTab} style={buttonStyleState}>
+            <a href={link} key={index} target={openNewTab} style={buttonStyleState}>
               <svg viewBox="0 0 64 64" style={iconStyle}>
                 <g fill={iconStyle.color}>
                   <path d={iconsDb[extractedDomain].icon}></path>
